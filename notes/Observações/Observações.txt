@@ -1,0 +1,79 @@
+24.09.2026 - Comecei
+
+link do jogo original no itch.io
+https://jackmalta.itch.io/runner-clt
+
+
+Para fazer a introdução, Eu tinha feito um objeto para 
+ele ter a sprite de determinada imagem
+de acordo com a room em que ele foi criado
+E ao apertar espaço, de acordo com a room, ele trocava para a proxima
+- Create - 
+//Se estiver na room de imagem 1
+if (room = rm_story1)
+{
+	//Seu sprite será da imagem 1
+	sprite_index = spr_img1;	
+	
+}//Senão se estiver na room de imagem 2
+else if (room = rm_story2)
+{
+	//O sprite será da imagem 2
+	sprite_index = spr_img2;	
+	
+}//Senão se estiver na room de imagem 3
+else if (room = rm_story3)
+{
+	//O sprite mudará para a imagem 3
+	sprite_index = spr_img3;	
+	
+}
+else//Senao, a room só pode ser a de imagem 4 ou a da partida
+{
+	//Sua sprite será a imagem 4
+	sprite_index = spr_img4;	
+}
+Mas eu percebi que seria mais facil se o objeto so trocasse de room
+e a imagem fosse um backgorund da room
+
+
+- Player
+Importei a sprite do player
+para o spr_player
+Criei um objeto para o player
+Fiz o player conseguir trocar de rua com as setinhas
+Fiz a imagem do player ser espelhada
+
+- Background
+Descobri como fazer o background animado mexendo na camada dele
+Marcando ( Tile Vertical ) Que faz o Background se multiplicar
+na Vertical
+Aumentei o deslocamento do Y dele para -1
+e Aumentei a velocidade do Y para 1
+Assim o Background fica com uma animação de movimento constante.
+
+- Lanches
+Fiz um objeto para cada lanche
+Fiz um objeto responsavel por criar os lanches
+O objeto chefe cria os lanches de acordo com os alarmes
+Cada alarme serve para um lanche
+Ele também escolhe se o lanche vai para a esquerda ou para a direita
+Fiz o player ganhar pontos e destruir os lanches ao colidir com eles
+
+- CLT
+Fiz o objeto para a CLT
+Fiz o chefe ter um alarme para gerar a CLT
+O chefe também escolhe se ela vai ser gerada na esquerda ou direita
+Fiz a room, os pontos e a musica reiniciar ao player colidir com ela
+
+- Segundarios
+Deixados de fora
+Fiz um som para cada lanche
+Importei o som da musica e da coleta para o jogo
+Aprendi a espelhar sprites
+A movimentar o fundo
+A destruir objetos
+E a criar objetos!
+
+- Jogo acabado - 
+24.09.2026 - 23:10
