@@ -11,14 +11,14 @@ global.timers = fvel;
 if (x < 60)
 {	//O Sprite é igual ao sprite padrao
 	//e a escala x da imagem é o padrao
-	sprite_index = spr_player;
+	sprite_index = global.skin;
 	image_xscale = 1.25;
 	image_yscale = 1.15;
 }
 else if (x > 120)//Senao Se o player estiver na direita
 {	//O Sprite é igual ao sprite padrão
 	//e a escala x da imagem é negativo
-	sprite_index = spr_player;
+	sprite_index = global.skin;
 	image_xscale = -1.25;
 	image_yscale = 1.15;
 }
@@ -27,7 +27,7 @@ else //Senão (ele está no meio)
 	image_xscale = 1.25;
 	image_yscale = 1.25;
 	//O sprite é top down
-	sprite_index = spr_playertop;
+	sprite_index = global.top;
 }
 
 //A velocidade do fundo é igual á variavel velociddade fundo

@@ -1,6 +1,6 @@
 //Iniciando variaveis globais
 
-
+#region Variaveis originais
 //o id dos objetos que serão destruidos
 global.id = 0;
 
@@ -21,4 +21,21 @@ global.chimas = false;
 global.mineirinho = 0;
 
 //Deixando o jogo aleatório
+
+#endregion
+
+#region Novas Variaveis
+//Variavel de recorde
+global.recorde = 0;
+
+//Variavel de Skins
+global.skin = spr_player;
+global.top = spr_playertop;
+
+//Variavel da skin selecionada
+global.selecionado = 0;
+
+
+#endregion
+
 randomise();

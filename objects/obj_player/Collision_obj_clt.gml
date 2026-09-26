@@ -3,6 +3,14 @@
 if (invensivel) exit;//Não rode os codigos abaixo
 
 
+//Salvando seu recorde
+//Se seus pontos são maiores do que o recorde
+if (global.pontos > global.recorde)
+{	//Eles são salvos como recorde
+	global.recorde = global.pontos;
+}
+	
+
 //A room reinicia
 room_restart();
 //Os pontos zeram
@@ -15,3 +23,6 @@ global.vel = 1;
 global.powerup = 0;
 //Reseta o chimas
 global.chimas = 0;
+
+//Game over
+room_goto(rm_morte);
